@@ -1,4 +1,5 @@
-import {mongoose, Schema} from mongoose;
+import mongoose from 'mongoose';
+const { Schema } = mongoose; 
 const ClassSchema = new Schema({
     userId: { type: Schema.Types.ObjectId, ref: 'User' }, 
     className: { type: String, required: true },

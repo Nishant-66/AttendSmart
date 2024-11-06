@@ -13,9 +13,9 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json()); 
 app.use(cookieParser()); // Parses cookies from incoming requests
 
-import authRoutes from './auth.routes.js';
-import classRoutes from './class.routes.js';
-import attendRoutes from './attend.routes.js';
+import authRoutes from './routes/auth.routes.js';
+import classRoutes from './routes/class.route.js';
+import attendRoutes from './routes/attend.routes.js';
 
 app.use('/auth', authRoutes);   
 app.use('/classes', classRoutes); 
